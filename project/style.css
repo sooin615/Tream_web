@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro";
+}
+
+img {
+  margin-left: auto;
+  width: 100px;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ul {
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: auto;
+  /* display: block;
+  padding: 5px;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none; 
+} */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #417dc7;
+  padding: 8px 12px;
+}
+
+.navbar_logo {
+  font-size: 24px;
+  color: white;
+}
+
+.navbar_logo i {
+  color: #d49466;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  padding: 8px 12px;
+}
+
+.navbar_menu li:hover {
+  background: #d49466;
+  border-radius: 4px;
+}
+
+.navbar_icons {
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-left: 0;
+}
+
+.navbar_icons li {
+  padding: 8px 12px;
+}
+
+.navbar_toogleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: #d49466;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  padding: 0 20px;
+}
+
+.search-box input[type="text"] {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.search-box button {
+  border: none;
+  background-color: #4285f4;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 50px;
+  width: 80px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.search-box {
+  margin: 0 auto;
+}
+
+.sleep_main {
+  width: 454px;
+  height: 327.28px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar_toogleBtn {
+    display: block;
+  }
+
+  .navbar_menu.active,
+  .navbar_icons.active {
+    display: flex;
+  }
+}
